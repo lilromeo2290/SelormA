@@ -126,3 +126,24 @@ The provided GitHub Personal Access Token (`ghp_***`) has been embedded in the r
 ---
 
 <!-- Append new commit entries below this line -->
+
+---
+Date: 2026-07-14 02:30 UTC
+Commit: 8e39632
+Type: feat
+Summary: Integrate official Selorm A Ventures logo
+
+Changes:
+- Added brand logo to `public/selorm-logo.png` (uploaded by user — stylized "S" + "A" with house, paintbrush, wheelbarrow, scaffolding, and concrete column elements)
+- `src/components/navbar.tsx`: Replaced placeholder Hammer icon with company logo image (48×48 rounded tile)
+- `src/components/footer.tsx`: Replaced placeholder Hammer icon in brand section with company logo
+- `src/components/hero.tsx`: Added floating logo watermark on the right side of hero (desktop only, gentle float animation)
+- `src/app/layout.tsx`: Updated favicon, shortcut icon, and apple-touch-icon to use brand logo
+
+Verification:
+- ESLint passes cleanly
+- Agent Browser verified logo placement on desktop (1440×900) hero, navbar, and footer
+- Mobile (390×844) navbar logo verified — no overflow or layout issues
+- Dev server running clean on port 3000
+
+Pushed By: Super Z (main agent)
