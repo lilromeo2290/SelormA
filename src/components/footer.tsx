@@ -1,6 +1,6 @@
 "use client";
 
-import { Hammer, Phone, Mail, MapPin, Facebook, Instagram, Linkedin, ArrowRight } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, ArrowRight } from "lucide-react";
 
 const quickLinks = [
   { label: "Home", href: "#home" },
@@ -44,8 +44,14 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2.5 mb-5">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#D89B00] text-[#0A2345]">
-                <Hammer className="h-6 w-6" strokeWidth={2.2} />
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl overflow-hidden bg-white ring-1 ring-white/10">
+                <img
+                  src="/selorm-logo.png"
+                  alt="Selorm A Ventures logo"
+                  className="h-full w-full object-cover"
+                  width={48}
+                  height={48}
+                />
               </div>
               <div className="flex flex-col leading-tight">
                 <span

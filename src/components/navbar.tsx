@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Menu, X, Phone, Hammer } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
@@ -68,13 +68,17 @@ export default function Navbar() {
         >
           <div
             className={cn(
-              "flex h-11 w-11 items-center justify-center rounded-xl transition-all duration-300",
-              scrolled
-                ? "bg-[#0A2345] text-[#D89B00]"
-                : "bg-[#0A2345]/90 text-[#D89B00] backdrop-blur"
+              "flex h-12 w-12 items-center justify-center rounded-xl overflow-hidden transition-all duration-300 bg-white shadow-sm",
+              scrolled && "ring-1 ring-[#0A2345]/10"
             )}
           >
-            <Hammer className="h-6 w-6" strokeWidth={2.2} />
+            <img
+              src="/selorm-logo.png"
+              alt="Selorm A Ventures logo"
+              className="h-full w-full object-cover"
+              width={48}
+              height={48}
+            />
           </div>
           <div className="flex flex-col leading-tight">
             <span

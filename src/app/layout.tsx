@@ -43,6 +43,11 @@ export const metadata: Metadata = {
   authors: [{ name: "Selorm A Ventures" }],
   creator: "Selorm A Ventures",
   publisher: "Selorm A Ventures",
+  icons: {
+    icon: "/selorm-logo.png",
+    shortcut: "/selorm-logo.png",
+    apple: "/selorm-logo.png",
+  },
   robots: {
     index: true,
     follow: true,

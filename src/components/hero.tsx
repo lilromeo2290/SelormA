@@ -37,6 +37,19 @@ export default function Hero() {
         <div className="h-40 w-40 rounded-full bg-[#D89B00]/10 blur-3xl" />
       </div>
 
+      {/* Floating logo watermark (top right) */}
+      <div className="absolute top-24 right-6 sm:right-12 lg:right-20 hidden md:block z-10 animate-float">
+        <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-2 shadow-premium-lg ring-1 ring-white/40 max-w-[180px] lg:max-w-[220px]">
+          <img
+            src="/selorm-logo.png"
+            alt="Selorm A Ventures brand logo"
+            className="w-full h-auto rounded-xl"
+            width={220}
+            height={150}
+          />
+        </div>
+      </div>
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-3xl">
           {/* Badge */}
